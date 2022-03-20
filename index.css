@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+#navbar{
+    width:auto;
+    height:7rem ;
+    display: flex;  
+    position: fixed; 
+    z-index: 1;
+    top: 0; 
+}
+#navbar::before{
+    content: " ";
+    background-color:#9e74747e;
+    position: absolute;
+    width: 100vw;
+    height: 7rem;
+    z-index: -1;
+}
+#logo{
+    margin: 0rem .5rem;
+}
+#logo img{
+    width: 5rem;
+    height: 5rem;
+    margin: -0.8rem;
+    padding: 1.5rem;
+    /* filter: invert(100%); */
+    border-radius:50%;   
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.9rem;
+}
+#navbar ul li a{
+    display:block;
+    margin: 1rem;
+    padding: 1.3rem;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius:80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#navbar ul li a:hover{
+    background-color:rgba(206, 195, 195, 0.952);
+}
+#home{
+    margin-top:7rem;
+    height: 45rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("foodbg1.jpg");
+    opacity: 0.99;
+    font-size: 1.9rem;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.h-primary{
+    margin-top: 2.5rem;
+    font-size: 7rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;   
+}
+.btn{
+    margin: 1.5rem;
+    padding:1rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 10%;
+    margin-top: 4rem;
+}
+.services-container{
+    width: 100vw;
+    height: auto;
+}
+#primary-heading{
+    padding:3rem 0rem;
+    font-size: 4rem;
+    text-align: center;
+    color: red;
+    height: 4rem;
+    /* text-shadow:0.2rem 0.2rem  rgb(240, 166, 153); */
+}
+.services{
+    width: 100%;
+    height: 30rem;
+    display: flex;    
+}
+.service1{
+    margin: 0.7rem 2rem;
+    padding: 1rem;
+    width: 47rem;
+    height: 28rem;
+    border: 2px solid brown;
+    border-radius:5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(247, 239, 236);
+    font-size: 1.5rem;
+}
+.service1 img{
+    width: 20rem;
+    height: 13rem;
+    border-radius: 20%;
+    margin-top: 2rem ;
+    margin-bottom: 0.5rem;
+}
+.s1{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color:black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.snote{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(252, 67, 0);
+    font-weight: bold;
+    text-align: center;
+    margin:2rem;
+}
+#primary1-heading{
+    padding:3rem 0rem;
+    font-size: 4rem;
+    text-align: center;
+    color:rgb(2, 31, 2);
+    height: 4rem;
+    text-shadow: 0.3rem 0.3rem wheat;
+}
+.about{
+    width: 100%;
+    height: 50rem;
+    background-image: url("foodbg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+}
+.history{
+    color: white;
+    font-size: 2rem;
+    font-family: serif;
+    height: 20rem;
+}
+#history{
+    font-size: 2rem;
+    text-align: center;
+}
+.history h3{
+    margin: 2rem;
+    padding: 1rem;
+    text-align:left;
+    font-size: 3.3rem;
+    color:white;
+}
+
+.dishes h3{
+    margin:2rem;
+    padding: 1rem;
+    text-align:left;
+    font-size: 3.3rem;
+    color:white;
+
+}
+.dishes{
+    width: 100%;
+    height: 25rem;
+}
+.dish1{
+    width: 100%;
+    display: flex;
+}
+#dish1{
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+}
+.dish1 img{
+    margin:1rem;
+    width: 9rem;
+    height: 11rem;
+    border-radius: 10%;
+}
+#primary2-heading{
+    padding:3rem 0rem;
+    font-size: 4rem;
+    text-align: center;
+    color:black;
+    height: 4rem;
+    text-shadow: 0.3rem 0.3rem wheat;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid black;
+    background-image: url("contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1.5rem 0rem;
+}
+.contact .formgroup
+{
+padding: 1rem;
+
+}
+.contact input{
+    width: 45rem;
+    height: 2.3rem;
+    border:0.17rem solid black;
+    box-shadow:0.4rem 0.4rem rgb(65, 73, 87);
+    margin-top: 0.5rem;
+}
+.contact textarea{
+    width: 45rem;
+    border:0.17rem solid black;
+    box-shadow:0.4rem 0.4rem rgb(65, 73, 87);
+}
+.btn1{
+    width: 8rem;
+    height: 2.5rem;
+    color: white;
+    background-color: black;
+    box-shadow:0.2rem 0.2rem rgb(65, 73, 87);
+    text-align: center;
+    margin: 1rem 20rem;
+    font-size: 2rem;
+}
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+
